@@ -23,6 +23,7 @@ export default function Home() {
       const data = await res.json();
       setSummary(data.summary);
     } catch (error) {
+      console.log(error)
       setSummary('เกิดข้อผิดพลาด กรุณาลองใหม่');
     } finally {
       setLoading(false);
